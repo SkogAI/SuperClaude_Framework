@@ -1,11 +1,18 @@
 {
   "metadata": {
-    "generated_at": "2025-10-29T00:00:00Z",
-    "version": "0.4.0",
-    "total_files": 196,
-    "python_loc": 3002,
-    "test_files": 7,
-    "documentation_files": 90
+    "generated": "2025-12-31",
+    "version": "4.1.9",
+    "type": "Python Package + Claude Code Plugin System",
+    "index_version": "1.0"
+  },
+  "stats": {
+    "python_files": 2575,
+    "plugin_markdown": 73,
+    "test_files": 10,
+    "commands": 30,
+    "agents": 20,
+    "modes": 7,
+    "mcp_servers": 8
   },
   "entry_points": {
     "cli": {
@@ -241,5 +248,52 @@
     "Parallel-First Execution - Use Wave → Checkpoint → Wave (3.5x faster)",
     "Token Efficiency - Optimize for minimal token usage",
     "Test-Driven Development - Tests first, implementation second"
-  ]
+  ],
+  "plugin_components": {
+    "commands": {
+      "count": 30,
+      "path": "plugins/superclaude/commands/",
+      "categories": {
+        "planning_design": 4,
+        "development": 5,
+        "testing_quality": 4,
+        "documentation": 2,
+        "version_control": 1,
+        "project_management": 3,
+        "research_analysis": 2,
+        "utilities": 9
+      }
+    },
+    "agents": {
+      "count": 20,
+      "path": "plugins/superclaude/agents/",
+      "categories": {
+        "architecture_development": 5,
+        "quality_performance": 4,
+        "research_analysis": 4,
+        "project_management": 3,
+        "specialized": 4
+      }
+    },
+    "modes": {
+      "count": 7,
+      "path": "plugins/superclaude/modes/",
+      "list": ["Brainstorming", "Business Panel", "Deep Research", "Introspection", "Orchestration", "Task Management", "Token Efficiency"]
+    }
+  },
+  "installation": {
+    "current_version": "4.1.9",
+    "architecture": "Python package + slash commands",
+    "install_command": "pipx install superclaude && superclaude install",
+    "commands_location": "~/.claude/commands/sc/"
+  },
+  "planned_v5": {
+    "status": "not_available",
+    "features": [
+      "TypeScript plugin system",
+      ".claude-plugin/ directory auto-detection",
+      "/plugin install superclaude",
+      "Plugin marketplace distribution"
+    ]
+  }
 }
